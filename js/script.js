@@ -8,6 +8,7 @@ $(document).ready(function(){
     let scrollpos=$(this).scrollTop();
     if(scrollpos>=350){
       $("#gnb").fadeIn();
+      $(".percent").show();
     }else{
       $("#gnb").fadeOut();
     };

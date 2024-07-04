@@ -227,21 +227,11 @@
 
 .pofile_all{
   width: 100%;
+  height: 100vh;
   background-color: #eee;
   color: #1f1f1f;
 }
 
-.pofile_all h1{
-  font-family: 'DungGeunMo';
-  font-size: 75px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: 200px;
-  left: -380px;
-  margin-top: -50px;
-}
 
 .pf_in{
   width: 1400px;
@@ -251,6 +241,18 @@
   justify-content: center;
   align-items: center;
   position: relative;
+  margin-top: -30px;
+}
+
+.pofile_all h1{
+  font-family: 'DungGeunMo';
+  font-size: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 190px;
+  left: -400px;
 }
 
 .pf_left{
@@ -335,7 +337,7 @@
 .skill{
   display: block;
   position: absolute;
-  top: 490px;
+  top: 460px;
   left: 620px;
 }
 
@@ -409,10 +411,14 @@
 .jv span{text-indent: 153px;}
 
 .subskill img{
-  width: 60px;
-  margin-top: 10px;
+  width: 55px;
+  margin-top: 8px;
+  margin-right: 10px;
 }
 
+.subskill img:nth-child(1){width: 63px;}
+.subskill img:nth-child(3){width: 50px;}
+.subskill img:nth-child(4){width: 45px;}
 
 /* 그래픽 */
 .graphic_all{
@@ -422,11 +428,8 @@
 }
 
 .graphic_in{
+  border: 1px solid #000;
   width: 1400px;
   height: 100vh;
   margin: auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
 }

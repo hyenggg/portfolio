@@ -11,8 +11,8 @@ $(document).ready(function(){
     }else{
       $("#gnb").fadeOut();
     };
+    
   });
-
 
   $(window).resize(function(){
     location.reload();
@@ -24,9 +24,8 @@ $(document).ready(function(){
   $("#gnb li").click(function(){
     let num=$(this).index();
       $("html,body").stop().animate({scrollTop:wh*num},500);
-  })
+  });
 
-  
   let a = 0;
   let area_n = $(".area").length
   let wheel = true;

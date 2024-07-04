@@ -11,6 +11,13 @@
 @import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css'); 
 /* font-family: xeicon;  */
 
+@font-face {
+  font-family: 'DungGeunMo';
+  src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_six@1.2/DungGeunMo.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
 *{
   margin: 0;
   padding: 0;

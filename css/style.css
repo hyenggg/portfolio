@@ -150,7 +150,7 @@
   position: absolute;
   top: 665px;
   right: 310px;
-  color: #FFE95B;;
+  color: #FFE95B;
   font-weight: 600;
   font-size: 22px;
   animation: battery-ani 2s 6s infinite;
@@ -231,8 +231,19 @@
   color: #1f1f1f;
 }
 
+.pofile_all h1{
+  font-family: 'DungGeunMo';
+  font-size: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  top: 200px;
+  left: -380px;
+  margin-top: -50px;
+}
+
 .pf_in{
-  border: 1px solid #000;
   width: 1400px;
   height: 100vh;
   margin: auto;
@@ -323,9 +334,8 @@
 
 .skill{
   display: block;
-  border: 1px solid #000;
   position: absolute;
-  top: 500px;
+  top: 490px;
   left: 620px;
 }
 
@@ -339,17 +349,84 @@
   margin-right: 35px;
 }
 
-.percent{
+@keyframes percent1{
+  0%{width: 0;}
+  100%{width: 90%;}
+}
+@keyframes percent2{
+  0%{width: 0;}
+  100%{width: 80%;}
+}
+@keyframes percent3{
+  0%{width: 0;}
+  100%{width: 75%;}
+}
+
+.percent, .percent2, .percent3{
   width: 280px;
   height: 13px;
   background-color: #c2c2c2;
+  overflow: hidden;
+  position: relative;
 }
+
+.percent:after, .percent2:after, .percent3:after{
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0px;
+  height: 13px;
+  background-color: #333;  
+}
+
+.percent:after{animation: percent1 3s ease forwards;}
+.percent2:after{animation: percent2 3s ease forwards;}
+.percent3:after{animation: percent3  3s ease forwards;}
+
 
 .skill_all .sk p{
   margin-bottom: 5px;
   display: inline-block;
+  font-weight: 500;
 }
 
 .skill_all .sk{
   margin-bottom: 12px;
+}
+
+.skill_all .sk span{
+  display: inline-block;
+  margin-left: 20px;
+  font-size: 15px;
+}
+
+.photo span{text-indent: 143px;}
+.ilust span{text-indent: 155px;}
+.fig span{text-indent: 179px;}
+.ht span{text-indent: 130px;}
+.jq span{text-indent: 171px;}
+.jv span{text-indent: 153px;}
+
+.subskill img{
+  width: 60px;
+  margin-top: 10px;
+}
+
+
+/* 그래픽 */
+.graphic_all{
+  width: 100%;
+  background-color: #FFE95B;
+  color: #1f1f1f;
+}
+
+.graphic_in{
+  width: 1400px;
+  height: 100vh;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
 }

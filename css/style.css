@@ -428,8 +428,134 @@
 }
 
 .graphic_in{
-  border: 1px solid #000;
   width: 1400px;
   height: 100vh;
   margin: auto;
 }
+
+.graphic_in h2{
+  font-family: 'DungGeunMo';
+  font-size: 85px;
+  padding-top: 100px;
+  margin-left: 120px;
+}
+
+.btn{
+  display: flex;
+  margin-left: 120px;
+}
+
+.btn1, .btn2{
+  font-size: 21px;
+  font-weight: 500;
+  color: #333;
+  background-color: #FFE95B;
+  border: 3px solid #333;
+  padding: 3px 40px;
+  border-radius: 10px;
+  margin-top: 20px;
+  margin-right: 20px;
+  transition: 0.35s;
+  width: 60px;
+}
+
+.btn1{
+  width: 75px;
+}
+
+.btn1:hover, .btn2:hover, .active{
+  cursor: pointer;
+  color: #fff;
+  background-color: #333;
+  border: 3px solid #333;
+}
+
+.gplist{
+  border-style: none;
+  background-color: #fff4af;
+}
+
+.list_gp li{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+.list_gp img{
+  width: 250px;
+  border-radius: 10px;
+}
+
+.list_all div{display: none;}
+.list_all div.active{display: block;}
+
+
+.thum1, .thum2, .thum3, .thum4{
+  margin-right: 30px;
+}
+
+.thum1 span, .thum2 span, 
+.thum3 span, .thum4 span{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #242424ce;
+  position: absolute;
+  top: 0px;
+  left:124px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.thum1:hover span, .thum2:hover span, 
+.thum3:hover span, .thum4:hover span{
+  opacity: 1;
+}
+
+
+.thum2 span{left: 405px;}
+.thum3 span{left: 685px;}
+.thum4 span{left: 965px;}
+
+.gp2 li{
+  display: flex;
+  justify-content: center;
+  position: relative;
+  transition: 0.3s;
+  margin-top: 40px;
+  margin-right: 30px;
+}
+
+.thum5, .thum6, .thum7, .thum8{
+  margin-right: 30px;
+}
+
+.thum5 span, .thum6 span, .thum7 span, .thum8 span{
+  text-align: center;
+  font-size: 25px;
+  font-weight: 300;
+  width: 250px;
+  height: 250px;
+  border-radius: 10px;
+  background-color: #242424ce;
+  position: absolute;
+  top: 0px;
+  left:124px;
+  opacity: 0;
+  transition: 0.35s;
+}
+
+.thum5:hover span, .thum6:hover span, 
+.thum7:hover span, .thum8:hover span{
+  opacity: 1;
+}
+
+.thum6 span{left: 405px;}
+.thum7 span{left: 685px;}
+.thum8 span{left: 965px;}

@@ -9,7 +9,7 @@ $(document).ready(function(){
     $("#"+result).addClass("active").hide().fadeIn();
   });
 
-  $(".list_gp2>li>.th").click(function(){
+  $(".list_gp2>li>.th_p").click(function(){
 
     g_pop=$(this).index();
 

@@ -8,8 +8,7 @@ $(document).ready(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal_content>li").eq(g_pop).fadeIn();
     $(".modal").stop().fadeIn();
-    $(".area").stop();
-
+    $(".area").off();
   });
 
   $(".pre").click(function(){

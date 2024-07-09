@@ -49,6 +49,7 @@ $(document).ready(function(){
       $("#dot span").eq(a).addClass("active");
       $("#dot span").eq(a).siblings().removeClass("active");
       $("html,body").stop().animate({scrollTop:wh*a},600);
+      $(".modal").off();
     };
   });
 });

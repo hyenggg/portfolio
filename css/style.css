@@ -48,7 +48,7 @@
   width: 1200px;
   height: inherit;
   margin: auto;
-  padding-left: 30px;
+  padding-left: 50px;
   padding-top: 10px;
 }
 
@@ -425,6 +425,7 @@
   width: 100%;
   background-color: #fff4af;
   color: #1f1f1f;
+  position: relative;
 }
 
 .graphic_in{
@@ -437,12 +438,12 @@
   font-family: 'DungGeunMo';
   font-size: 85px;
   padding-top: 100px;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 .btn{
   display: flex;
-  margin-left: 120px;
+  margin-left: 150px;
 }
 
 .btn1, .btn2{
@@ -475,7 +476,7 @@
   background-color: #fff4af;
 }
 
-.list_gp li{
+.list_gp li, .list_gp2 li{
   display: flex;
   justify-content: center;
   position: relative;
@@ -484,11 +485,11 @@
   margin-right: 30px;
 }
 
-.list_gp img{
+.list_gp img, .list_gp2 img{
   width: 250px;
   border-radius: 10px;
 }
-
+.list_all{margin-left: 50px;}
 .list_all div{display: none;}
 .list_all div.active{display: block;}
 
@@ -500,17 +501,18 @@
 .thum1 span, .thum2 span, 
 .thum3 span, .thum4 span{
   text-align: center;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 230px;
   width: 250px;
   height: 250px;
   border-radius: 10px;
   background-color: #242424ce;
   position: absolute;
   top: 0px;
-  left:124px;
+  left:100px;
   opacity: 0;
-  transition: 0.35s;
+  transition: 0.5s;
 }
 
 .thum1:hover span, .thum2:hover span, 
@@ -518,17 +520,26 @@
   opacity: 1;
 }
 
+.thum1 span::before, .thum2 span::before,
+.thum3 span::before, .thum4 span::before{
+  content: url(../image/more.png);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
+}
 
-.thum2 span{left: 405px;}
-.thum3 span{left: 685px;}
-.thum4 span{left: 965px;}
+
+.thum2 span{left: 380px;}
+.thum3 span{left: 660px;}
+.thum4 span{left: 940px;}
 
 .gp2 li{
   display: flex;
   justify-content: center;
   position: relative;
   transition: 0.3s;
-  margin-top: 40px;
+  margin-top: 25px;
   margin-right: 30px;
 }
 
@@ -538,17 +549,27 @@
 
 .thum5 span, .thum6 span, .thum7 span, .thum8 span{
   text-align: center;
-  font-size: 25px;
-  font-weight: 300;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 230px;
   width: 250px;
   height: 250px;
   border-radius: 10px;
   background-color: #242424ce;
   position: absolute;
   top: 0px;
-  left:124px;
+  left:100px;
   opacity: 0;
-  transition: 0.35s;
+  transition: 0.5s;
+}
+
+.thum5 span::before, .thum6 span::before,
+.thum7 span::before, .thum8 span::before{
+  content: url(../image/more.png);
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 40px;
 }
 
 .thum5:hover span, .thum6:hover span, 
@@ -556,6 +577,85 @@
   opacity: 1;
 }
 
-.thum6 span{left: 405px;}
-.thum7 span{left: 685px;}
-.thum8 span{left: 965px;}
+.thum6 span{left: 380px;}
+.thum7 span{left: 660px;}
+.thum8 span{left: 940px;}
+
+.th1 span{left: 240px;}
+.th2 span{left: 520px;}
+.th3 span{left: 800px;}
+.th4 span{left: 380px;}
+.th5 span{left: 660px;}
+
+
+/* POPUP BOX ---------------------*/
+
+.modal, .modal2{ /*검정배경*/
+	display:none; 
+	position:absolute; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100vh; 
+	background:rgba(0,0,0,0.7); 
+	z-index:1000;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+.modal_in, .modal_in2{
+	width: 1200px;
+	min-height: 100%;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);  
+}
+
+.modal_content, .modal_content2{   
+	position:absolute;
+	width:1200px;
+	min-height: 100%;
+}
+
+
+.modal_content>li, .modal_content2>li{
+	display:none;
+	text-align:center;
+	font-size:30px;
+}
+
+
+/*버튼영역*/ 
+.modal_btn, .modal_btn2{
+  border: 1px solid #000;
+	position:fixed;
+	left:95%;
+	top:30px;
+	width:120px;
+	height:150px;
+	color:#fff;
+	text-align:center;
+	overflow:hidden;
+	z-index:200;
+}
+
+.modal_btn i, .modal_btn2 i{cursor: pointer;}
+.close, .close2{
+	padding-bottom: 10px;
+}
+.close i, .close2 i{font-size: 32px;}
+.lr-btn, .lr-btn2{
+	display: flex;
+	justify-content: center;
+	margin-top: 10px;
+}
+.lr-btn i, .lr-btn2 i{font-size: 28px;}
+.g_page, .g_page2{ 
+	font-size:12px;
+	color:#fff;
+	width:80px;
+	padding-top:10px;
+	height:50px;
+	text-align:center;
+}
+

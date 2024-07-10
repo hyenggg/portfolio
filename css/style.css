@@ -714,20 +714,135 @@
 }
 
 /* 웹사이트 제작 */
+
 .site_all{
   width: 100%;
   height: 100vh;
-  background-color: #616161;
-  color: #1f1f1f;
+  background-color: yellowgreen;
 }
 
-
-.site_in{
-  width: 1400px;
+.slide{
+  position: relative;
+  width: 100%;
   height: 100vh;
-  margin: auto;
+  overflow: hidden;
+}
+
+.slide .slide_items{
+  position: absolute;
+  display: flex;
+}
+
+.slide .slide_items li{
+  width: 100%;
+  color: #fff;
+}
+
+.slide .slide_items li.per1{
+  background-color: #3F3F3F;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.slide .slide_items li.yellowgreen{background-color: yellowgreen;}
+
+.side-btn{
+  position: absolute;
+  color: #fff;
+  font-size: 70px;
+  top: 50%;
+  left: 20px;
+  transform: translateY(-50%);
+  cursor: pointer;
+  display: flex;
+}
+
+.next3{
+  position: absolute;
+  left: 1780px;
+}
+
+.onepage{
+  border: 1px solid #000;
+  width: 1600px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.onepage h3{
+  font-size: 20px;
+}
+
+.one_left{
+  /* border: 1px solid #000; */
+  margin-left: 100px;
+  width: 450px;
+}
+
+.one_left img{
+  width: 300px;
+  transform: translateX(25%);
+}
+
+.one_left p{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  color: #4CE64C;
+  margin-top: 10px;
+}
+
+.one_left h4{
+  display: block;
+  text-align: center;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: 400;
+  margin: 10px 0;
+  color: #4CE64C;
+  margin-bottom: 28px;
+}
+
+.one_left hr{
+  height: 3px;
+  background-color: #FFE95B;
+  margin-bottom: 10px;
+}
+
+.one_work p{
+  font-size: 20px;
+}
+
+p.text_1{
+  font-style: normal;
+  font-weight: 300;
+  font-size: 20px;
+  color: #FFE95B;
+}
+
+p.text_1 span{
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #FFE95B;
+}
+
+p.text_1 em{
+  font-style: normal;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #FFE95B;
+}
+
+hr.hr2{
+  height: 1px;
+  background-color: #FFE95B;
+  margin-top: 10px;
+}
+
+.work_p{
   display: flex;
   justify-content: center;
-  align-items: center;
-  position: relative;
 }
+

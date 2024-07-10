@@ -844,5 +844,34 @@ hr.hr2{
 .work_p{
   display: flex;
   justify-content: center;
+  margin-top: -5px;
 }
 
+.work_p p{
+  background-color: #FFF29F;
+  color: #333;
+  font-style: normal;
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.page{
+  margin-left: 10px;
+}
+
+.tool p{
+  background-color: #FFF29F;
+  color: #333;
+  font-style: normal;
+  font-size: 20px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 80px;
+  margin-top: 15px;
+}
+
+.one_work h5::before{
+  content: url(../image/pcicon.png);
+}

@@ -872,6 +872,22 @@ hr.hr2{
   margin-top: 15px;
 }
 
+.one_work h5{
+  text-align: center;
+  margin: 13px 0;
+  font-size: 20px;
+  font-weight: 500;
+  position: relative;
+  margin-left: 40px;
+}
+
 .one_work h5::before{
   content: url(../image/pcicon.png);
+  position: absolute;
+  top: 4px;
+  left: 50px;
+}
+
+.one_right img{
+  width: 800px;
 }

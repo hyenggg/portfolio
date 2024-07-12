@@ -1104,11 +1104,6 @@ hr.hr3{
   left: 50px;
 }
 
-@keyframes one-ani{
-  from{transform: translateY(18px);}
-  to{transform: translateY(0px);}
-}
-
 .one_right2 img{
   width: 840px;
   margin-right: 50px;
@@ -1279,14 +1274,9 @@ hr.hr4{
   left: 50px;
 }
 
-@keyframes one-ani{
-  from{transform: translateY(18px);}
-  to{transform: translateY(0px);}
-}
-
 .one_right3 img{
-  width: 840px;
-  margin-right: 50px;
+  width: 890px;
+  margin-right: 25px;
   /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 

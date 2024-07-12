@@ -146,7 +146,7 @@
   }
 }
 
-.main_vs2 p{
+.main_vs2 h2{
   position: absolute;
   top: 665px;
   right: 310px;
@@ -157,7 +157,7 @@
   opacity: 0;
 }
 
-.main_vs2 p em{
+.main_vs2 h2 em{
   margin-left: 40px;
   font-style: normal;
 }
@@ -809,6 +809,7 @@
   height: 3px;
   background-color: #FFE95B;
   margin-bottom: 10px;
+  border-style: none;
 }
 
 .one_work p{
@@ -836,7 +837,7 @@ p.text_1 em{
 }
 
 hr.hr2{
-  height: 1px;
+  height: 2px;
   background-color: #FFE95B;
   margin-top: 10px;
 }
@@ -962,16 +963,12 @@ hr.hr2{
 }
 
 /* 두번째 슬라이드 */
+
 .slide .slide_items li.per2{
   background-color: #F5F5F5;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.next3{
-  position: absolute;
-  left: 1780px;
 }
 
 .ikea_page{
@@ -1025,10 +1022,10 @@ hr.hr2{
 }
 
 .one_left2 hr{
-  height: 4px;
+  height: 5px;
   background-color: #1E91FF;
   margin-bottom: 8px;
-  font-size: 15px;
+  border-style: none;
 }
 
 .one_work2 p{font-size: 20px;}
@@ -1054,8 +1051,8 @@ p.text_2 em{
 }
 
 hr.hr3{
-  height: 1px;
-  background-color: #1E91FF;;
+  height: 2px;
+  background-color: #1E91FF;
   margin-top: 10px;
 }
 
@@ -1097,7 +1094,7 @@ hr.hr3{
   font-weight: 600;
   position: relative;
   margin-left: 40px;
-  color: #0053A3
+  color: #0053A3;
 }
 
 .one_work2 h5::before{
@@ -1134,7 +1131,196 @@ hr.hr3{
   transition: 0.35s;
 }
 
-.go a:hover{
+.go2 a:hover{
   background-color: #181818;
   color: #FFE95B;;
+}
+
+/* 세번째 슬라이드 */
+
+.slide .slide_items li.per3{
+  background-color: #F9FFEA;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hana_page{
+  width: 1600px;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hana_page h3{
+  font-size: 20px;
+}
+
+
+.one_left3{
+  /* border: 1px solid #000; */
+  margin-left: 145px;
+  width: 450px;
+}
+
+.one_left3 img{
+  width: 300px;
+  transform: translateX(25%);
+}
+
+.one_left3 h2{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 800;
+  color: #333;
+  margin-top: 13px;
+}
+
+.one_left3 p{
+  text-align: center;
+  font-size: 50px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.one_left3 h4{
+  display: block;
+  text-align: center;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 20px;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+.one_left3 hr{
+  height: 4px;
+  background-color: #79FFCE;
+  margin-bottom: 8px;
+  font-size: 15px;
+  border-style: none;
+}
+
+.one_work3 p{font-size: 20px;}
+
+p.text_3{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  color: #333;
+}
+
+p.text_3 span{
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #333;
+}
+
+p.text_3 em{
+  font-style: normal;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 2px solid #333;
+}
+
+hr.hr4{
+  height: 2px;
+  background-color: #79FFCE;
+  margin-top: 10px;
+}
+
+.work_p3{
+  display: flex;
+  justify-content: center;
+  margin-top: -5px;
+}
+
+.work_p3 p{
+  background-color: #FFE6D8;
+  color: #333;
+  font-style: normal;
+  font-size: 19px;
+  padding: 5px 15px;
+  border-radius: 5px;
+}
+
+.page3{
+  margin-left: 10px;
+}
+
+.tool3 p{
+  background-color: #FFE6D8;
+  color: #333;
+  font-style: normal;
+  font-size: 19px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  display: inline-block;
+  margin-left: 50px;
+  margin-top: 15px;
+}
+
+.one_work3 h5{
+  text-align: center;
+  margin: 13px 0;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 40px;
+  color: #3540BC;
+}
+
+.one_work3 h5::before{
+  content: url(../image/pcicon3.png);
+  position: absolute;
+  top: 4px;
+  left: 50px;
+}
+
+@keyframes one-ani{
+  from{transform: translateY(18px);}
+  to{transform: translateY(0px);}
+}
+
+.one_right3 img{
+  width: 840px;
+  margin-right: 50px;
+  /* animation: one-ani 1.5s infinite alternate ease-in-out; */
+}
+
+.go3 a{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #252525;
+  background-color: #FFE95B;
+  padding: 9px 30px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 3px solid #181818;
+  transition: 0.35s;
+}
+
+.go3 a:hover{
+  background-color: #181818;
+  color: #FFE95B;;
+}
+
+.responsive{
+  display: flex;
+}
+
+.responsive a{
+  width: 80px;
+}
+
+.responsive a{margin-left: 15px;}
+.responsive a:nth-child(1){
+  margin-left: -1px;
+}
+.responsive a:nth-child(3){
+  width: 60px;
 }

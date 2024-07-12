@@ -922,7 +922,7 @@ hr.hr2{
 }
 
 /* 모달 */
-.modal3, .modal4{ /*검정배경*/
+.modal3, .modal4, .modal5{ /*검정배경*/
 	display:none; 
 	position:absolute; 
 	left:0; 
@@ -935,14 +935,14 @@ hr.hr2{
 	overflow-y:auto; 
 }
 
-.modal_content3, .modal_content4{
+.modal_content3, .modal_content4, .modal_content5{
 	width: 1200px;
 	min-height: 100%;
   position: relative;
   left: 400px;
 }
 
-.btn_close, .btn_close2{
+.btn_close, .btn_close2, .btn_close3{
   position: absolute;
   color:#333;
   background-color: #FFE95B;
@@ -958,7 +958,7 @@ hr.hr2{
   top: 10px;
 }
 
-.btn_close i, .btn_close2 i{
+.btn_close i, .btn_close2 i, .btn_close3 i{
   margin-top: 6px;
 }
 

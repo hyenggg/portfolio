@@ -379,8 +379,7 @@
   left: 0;
   width: 0px;
   height: 13px;
-  background-color: #333;
-  opacity: 0; 
+  background-color: #333; 
 }
 
 .percent:after{animation: percent1 3s ease forwards;}
@@ -900,9 +899,9 @@ hr.hr2{
   /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 
-.go{margin-top: 20px;}
+.go, .go2{margin-top: 20px;}
 
-.go a{
+.go a, .go2 a{
   display: block;
   text-align: center;
   font-size: 22px;
@@ -916,13 +915,13 @@ hr.hr2{
   transition: 0.35s;
 }
 
-.go a:hover{
+.go a:hover, .go2 a:hover{
   background-color: #181818;
   color: #FFE95B;;
 }
 
 /* 모달 */
-.modal3{ /*검정배경*/
+.modal3, .modal4{ /*검정배경*/
 	display:none; 
 	position:absolute; 
 	left:0; 
@@ -935,19 +934,14 @@ hr.hr2{
 	overflow-y:auto; 
 }
 
-.modal_content3{
+.modal_content3, .modal_content4{
 	width: 1200px;
 	min-height: 100%;
   position: relative;
   left: 400px;
 }
 
-.modal_ content img {
-  display: block;
-  margin: 20px auto;
-}
-
-.btn_close{
+.btn_close, .btn_close2{
   position: absolute;
   color:#333;
   background-color: #FFE95B;
@@ -963,7 +957,7 @@ hr.hr2{
   top: 10px;
 }
 
-.btn_close i{
+.btn_close i, .btn_close2 i{
   margin-top: 6px;
 }
 
@@ -1119,14 +1113,14 @@ hr.hr3{
 }
 
 .one_right2 img{
-  width: 870px;
+  width: 840px;
   margin-right: 50px;
   /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 
 .go{margin-top: 20px;}
 
-.go a{
+.go2 a{
   display: block;
   text-align: center;
   font-size: 22px;

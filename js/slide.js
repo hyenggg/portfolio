@@ -8,7 +8,7 @@ $(document).ready(function(){
       slidePrev = slideContainer.find(".side-btn .prev"),
       slideNext = slideContainer.find(".side-btn .next3");
 
-  // 슬라이드의 기본 위치
+
   $('.slide_item').css({'width': slideWidth, 'height': slideHeight});
   $('.slide_items').css({'width': slideItemsWidth, 'height': slideHeight});
   $('.slide_item:last-child').prependTo($('.slide_items'));

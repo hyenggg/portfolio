@@ -8,7 +8,6 @@ $(document).ready(function(){
     let scrollpos=$(this).scrollTop();
     if(scrollpos>=350){
       $("#gnb").fadeIn();
-      $(".percent").show();
     }else{
       $("#gnb").fadeOut();
     };
@@ -49,7 +48,6 @@ $(document).ready(function(){
       $("#dot span").eq(a).addClass("active");
       $("#dot span").eq(a).siblings().removeClass("active");
       $("html,body").stop().animate({scrollTop:wh*a},600);
-      $(".modal").off();
     };
   });
 });

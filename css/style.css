@@ -418,7 +418,8 @@
 
 .subskill img:nth-child(1){width: 63px;}
 .subskill img:nth-child(3){width: 50px;}
-.subskill img:nth-child(4){width: 45px;}
+.subskill img:nth-child(4){width: 47px;}
+.subskill img:nth-child(5){width: 45px;}
 
 /* 그래픽 */
 .graphic_all{
@@ -619,7 +620,7 @@
 
 /* POPUP BOX ---------------------*/
 
-.modal, .modal2{ /*검정배경*/
+.modal, .modal2{
 	display:none; 
 	position:absolute; 
 	left:0; 
@@ -636,7 +637,7 @@
 	width: 1200px;
 	min-height: 100%;
   position: relative;
-  left: 350px;
+  margin: auto;
 }
 
 .modal_content, .modal_content2{   
@@ -645,7 +646,6 @@
 	min-height: 100%;
 }
 
-
 .modal_content>li, .modal_content2>li{
 	display:none;
 	text-align:center;
@@ -653,7 +653,7 @@
 }
 
 
-/*버튼영역*/
+/*버튼*/
 
 .modal_btn, .modal_btn2{
 	position: fixed;
@@ -745,22 +745,21 @@
   align-items: center;
   justify-content: center;
 }
-.slide .slide_items li.yellowgreen{background-color: rgb(244, 255, 223);}
 
 .side-btn{
   position: absolute;
   color: #acacac;
   font-size: 70px;
-  top: 50%;
-  left: 20px;
-  transform: translateY(-50%);
-  cursor: pointer;
+  top: 45%;
+  left:50%;
+  transform: translateX(-50%);
   display: flex;
+  justify-content: space-between;
+  width: 1750px;
 }
 
-.next3{
-  position: absolute;
-  left: 1780px;
+.side-btn span{
+  cursor: pointer;
 }
 
 .onepage{
@@ -776,7 +775,6 @@
 }
 
 .one_left{
-  /* border: 1px solid #000; */
   margin-left: 145px;
   width: 450px;
 }
@@ -889,15 +887,9 @@ hr.hr2{
   left: 50px;
 }
 
-@keyframes one-ani{
-  from{transform: translateY(18px);}
-  to{transform: translateY(0px);}
-}
-
 .one_right img{
   width: 870px;
   margin-right: 50px;
-  /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 
 .go, .go2{margin-top: 20px;}
@@ -922,7 +914,7 @@ hr.hr2{
 }
 
 /* 모달 */
-.modal3, .modal4, .modal5{ /*검정배경*/
+.modal3, .modal4, .modal5, .modal6{
 	display:none; 
 	position:absolute; 
 	left:0; 
@@ -935,15 +927,17 @@ hr.hr2{
 	overflow-y:auto; 
 }
 
-.modal_content3, .modal_content4, .modal_content5{
-	width: 1200px;
+.modal_content3, .modal_content4, .modal_content5,
+.modal_content6{
+	width: 1080px;
 	min-height: 100%;
   position: relative;
-  left: 400px;
+  margin: auto;
 }
 
-.btn_close, .btn_close2, .btn_close3{
-  position: absolute;
+.btn_close, .btn_close2, .btn_close3,
+.btn_close4{
+  position: fixed;
   color:#333;
   background-color: #FFE95B;
   border: 2px solid #000;
@@ -954,7 +948,7 @@ hr.hr2{
   padding-top: 20px;
   padding: 0 5px;
   margin-top: 20px;
-  right: 50px;
+  left: 1530px;
   top: 10px;
 }
 
@@ -1107,7 +1101,6 @@ hr.hr3{
 .one_right2 img{
   width: 840px;
   margin-right: 50px;
-  /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 
 .go{margin-top: 20px;}
@@ -1154,7 +1147,6 @@ hr.hr3{
 
 
 .one_left3{
-  /* border: 1px solid #000; */
   margin-left: 145px;
   width: 450px;
 }
@@ -1277,7 +1269,6 @@ hr.hr4{
 .one_right3 img{
   width: 890px;
   margin-right: 25px;
-  /* animation: one-ani 1.5s infinite alternate ease-in-out; */
 }
 
 .go3 a{
@@ -1313,4 +1304,426 @@ hr.hr4{
 }
 .responsive a:nth-child(3){
   width: 60px;
+}
+
+
+/* 모바일 */
+
+.mobile_all{
+  position: relative;
+}
+
+.mobile_slide{
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.mobile_slide .mobile_items{
+  position: absolute;
+  display: flex;
+}
+
+.mobile_slide .mobile_items li{
+  width: 100%;
+}
+
+.side-btn2{
+  position: absolute;
+  color: #acacac;
+  font-size: 70px;
+  top: 45%;
+  left:50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  width: 1750px;
+}
+
+.side-btn2 span{
+  cursor: pointer;
+}
+
+/* 모달 */
+.modal6, .modal7{
+	display:none; 
+	position:absolute; 
+	left:0; 
+	top:0;
+	width:100%; 
+	height:100vh; 
+	background:rgba(0,0,0,0.7); 
+	z-index:1000;
+	overflow-x:hidden;
+	overflow-y:auto; 
+}
+
+.modal_content6, .modal_content7{
+	width: 1080px;
+	min-height: 100%; 
+  position: relative;
+  margin: auto;
+}
+
+.btn_close4, .btn_close5{
+  position: fixed;
+  color:#333;
+  background-color: #FFE95B;
+  border: 2px solid #000;
+  border-radius: 7px;
+  cursor: pointer;
+  height: 35px;
+  transform: scale(1.2);
+  padding-top: 20px;
+  padding: 0 5px;
+  margin-top: 20px;
+  left: 1530px;
+  top: 10px;
+}
+
+.btn_close4 i, .btn_close5 i{
+  margin-top: 6px;
+}
+
+/* 첫번째 슬라이드 */
+
+.mobile_slide .mobile_items li.mob2{
+  background: linear-gradient(to bottom, #fff, #FFE196);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.museum{
+  display: flex;
+  margin: auto;
+}
+
+.mu_left img{
+  width: 750px;
+  margin-top: 50px;
+}
+
+.mu_right{
+  margin-top: 370px;
+  height: 400px;
+  margin-right: 10px;
+}
+
+.mu_right img{
+  width: 280px;
+}
+
+.mu_right h2{
+  font-size: 45px;
+  font-weight: 800;
+  color: #333;
+  margin-top: 13px;
+  position: relative;
+}
+
+.mu_right h2::after{
+  content: url(../image/museumicon.png);
+  position: absolute;
+  left: 370px;
+  top: -18px;
+  width: 200px;
+  transform: scale(0.7);
+}
+
+.mu_right h4{
+  display: block;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+.mu_right hr{
+  height: 4px;
+  background-color: #00B373;
+  margin-top: -10px;
+  font-size: 15px;
+  border-style: none;
+  margin-bottom: 15px;
+}
+
+.mwork_p{display: flex;}
+
+.mwork_p p{
+  background-color: #FF9457;
+  color: #333;
+  font-style: normal;
+  font-size: 19px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.mu_work{display: flex;}
+
+.mpage, .mtool{
+  margin-left: 12px;
+}
+
+.mu_work h5{
+  text-align: center;
+  margin: 13px 0;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 40px;
+  color: #0A5B48;
+  margin-bottom: 20px;
+}
+
+.mu_work h5::before{
+  content: url(../image/pcicon4.png);
+  position: absolute;
+  top: 4px;
+  left: 70px;
+}
+
+.go4{display: flex;}
+
+.go4 a{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #252525;
+  background-color: #FFE95B;
+  padding: 9px 30px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 3px solid #181818;
+  transition: 0.35s;
+  margin-right: 15px;
+}
+
+.go4 a:hover{
+  background-color: #181818;
+  color: #FFE95B;;
+}
+
+.museum_modal{
+  margin-left: 20px;
+}
+
+/* 두번째 슬라이드 */
+.mobile_slide .mobile_items li.mob1{
+  background-color: #F0FFF1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dadok{
+  display: flex;
+  margin: auto;
+}
+
+.da_left img{
+  width: 440px;
+  margin-top: 70px;
+  margin-left: 85px;
+}
+
+.da_right{
+  margin-top: 400px;
+  height: 400px;
+  margin-left: 140px;
+}
+
+.da_right img{
+  width: 280px;
+}
+
+.da_right h2{
+  font-size: 45px;
+  font-weight: 800;
+  color: #333;
+  margin-top: 13px;
+  position: relative;
+}
+
+.da_right h2::after{
+  content: url(../image/dadkoicon.png);
+  position: absolute;
+  left:470px;
+  top: -70px;
+  width: 200px;
+  transform: scale(0.4);
+}
+
+.da_right h4{
+  display: block;
+  font-size: 19px;
+  font-style: normal;
+  font-weight: 600;
+  margin-top: 10px;
+  color: #333;
+  margin-bottom: 28px;
+}
+
+.da_right hr{
+  height: 4px;
+  background-color: #2CBB87;
+  margin-top: -10px;
+  font-size: 15px;
+  border-style: none;
+  margin-bottom: 15px;
+}
+
+.dwork_p{display: flex;}
+
+.dwork_p p{
+  background-color: #A3E5A3;
+  color: #333;
+  font-style: normal;
+  font-size: 19px;
+  padding: 5px 15px;
+  border-radius: 5px;
+  font-weight: 500;
+}
+
+.da_work{display: flex;}
+
+.dpage, .dtool{
+  margin-left: 12px;
+}
+
+.da_work h5{
+  text-align: center;
+  margin: 13px 0;
+  font-size: 20px;
+  font-weight: 600;
+  position: relative;
+  margin-left: 40px;
+  color: #0A5B48;
+  margin-bottom: 20px;
+}
+
+.da_work h5::before{
+  content: url(../image/pcicon4.png);
+  position: absolute;
+  top: 4px;
+  left: 70px;
+}
+
+.go5{display: flex;}
+
+.go5 a{
+  display: block;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 500;
+  color: #252525;
+  background-color: #FFE95B;
+  padding: 9px 30px;
+  border-radius: 8px;
+  margin-top: 10px;
+  border: 3px solid #181818;
+  transition: 0.35s;
+  margin-right: 15px;
+}
+
+.go5 a:hover{
+  background-color: #181818;
+  color: #FFE95B;;
+}
+
+.dadok_modal{
+  margin-left: 20px;
+}
+
+.da img{
+  width: 1080px;
+}
+
+
+/* 웹계획 */
+.planing_all{
+  width: 100%;
+  height: 100vh;
+  background-color: #ffef84;
+}
+
+.pl_in{
+  width: 1300px;
+  height: inherit;
+  margin: auto;
+}
+
+.pl_in h2{
+  font-family: 'DungGeunMo';
+  font-size: 80px;
+  padding-top: 100px;
+  margin-bottom: 35px;
+}
+
+.plan{
+  display: flex;
+}
+
+.pdf1 object{
+  border-radius: 17px;
+
+}
+
+.plist_all div{display: none;}
+.plist_all div.active2{display: block;}
+
+.btn_menu2{
+  width: 600px;
+  margin-right: 40px;
+  position: relative;
+}
+
+.btn_menu2 h3{
+  font-family: 'DungGeunMo';
+  text-align: center;
+  font-size: 45px;
+}
+
+.p_btn .p1{
+  background-color: #FFE95B;
+  border: 3px solid #333;
+  border-radius: 8px;
+  padding: 25px 30px;
+  text-align: center;
+}
+
+.p_btn li{
+  margin-top: 14px;
+  font-weight: 600;
+  font-size: 17px;
+}
+
+.p_btn .check{
+  margin-top: 125px;
+}
+
+.btn_menu2 h4{
+  position: absolute;
+  top: 350px;
+  font-family: 'DungGeunMo';
+  text-align: center;
+  font-size: 45px;
+}
+.p_btn .p2{
+  background-color: #79FFCE;
+}
+
+.pb1:hover, .pb2:hover, .pb3:hover,
+.pb4:hover, .pb5:hover, .active3.pb1,
+.active3.pb2, .active3.pb3, .active3.pb4,
+.active3.pb5{
+  cursor: pointer;
+  color: #fff;
+  background-color: #333;
+  font-weight: 400;
 }

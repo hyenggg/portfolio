@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-  $(".list_gp>li>.thum").click(function(){
+  $(".list_gp>li>.thum").click(function(e){
 
     g_pop=$(this).index();
 
@@ -8,7 +8,6 @@ $(document).ready(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal_content>li").eq(g_pop).fadeIn();
     $(".modal").stop().fadeIn();
-    $(".area").off();
   });
 
   $(".pre").click(function(){

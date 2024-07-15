@@ -31,8 +31,7 @@ $(document).ready(function(){
   let wheel = true;
 
   $(".area").on("mousewheel DOMMouseScroll",function(e,delta){
-    e.preventDefault();
-    //console.log(delta);
+    e.stopPropagation();
     if (wheel){
       let n = $(this).index();
       if(delta < 0){

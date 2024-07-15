@@ -20,6 +20,21 @@ $(document).ready(function(){
 
   });
 
+  $(document).ready(function(){
+
+    $(".p_btn li").click(function(){
+      $(this).addClass("active3");
+      $(this).siblings().removeClass("active3"); 
+  
+      let result = $(this).attr("data-alt");
+      $(".plist_all div").removeClass("active2");
+      $("#"+result).addClass("active2").hide().fadeIn();  //show()도 가능
+    });
+  
+  });
+
+
+
   $(".pre2").click(function(){
     if(g_pop>0){
       $(".modal_content2>li").eq(g_pop).stop().fadeOut(); 

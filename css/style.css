@@ -622,7 +622,7 @@
 
 .modal, .modal2{
 	display:none; 
-	position:absolute; 
+	position:fixed;
 	left:0; 
 	top:0;
 	width:100%; 
@@ -916,7 +916,7 @@ hr.hr2{
 /* 모달 */
 .modal3, .modal4, .modal5, .modal6{
 	display:none; 
-	position:absolute; 
+	position:fixed;
 	left:0; 
 	top:0;
 	width:100%; 
@@ -1348,7 +1348,7 @@ hr.hr4{
 /* 모달 */
 .modal6, .modal7{
 	display:none; 
-	position:absolute; 
+	position:fixed;
 	left:0; 
 	top:0;
 	width:100%; 
@@ -1649,7 +1649,7 @@ hr.hr4{
 .planing_all{
   width: 100%;
   height: 100vh;
-  background-color: #ffef84;
+  background-color: #fff4af;
 }
 
 .pl_in{
@@ -1695,12 +1695,13 @@ hr.hr4{
   border-radius: 8px;
   padding: 25px 30px;
   text-align: center;
+  transition: 0.35s;
 }
 
 .p_btn li{
   margin-top: 14px;
   font-weight: 600;
-  font-size: 17px;
+  font-size: 16px;
 }
 
 .p_btn .check{
@@ -1723,7 +1724,7 @@ hr.hr4{
 .active3.pb2, .active3.pb3, .active3.pb4,
 .active3.pb5{
   cursor: pointer;
-  color: #fff;
+  color: #FFE95B;
   background-color: #333;
   font-weight: 400;
 }

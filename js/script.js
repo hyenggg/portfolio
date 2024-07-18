@@ -27,12 +27,12 @@ $(document).ready(function(){
   });
 
   let a = 0;
-  let area_n = $(".area").length
+  let area_n = $(".area").length;
   let wheel = true;
 
   $(".area").on("mousewheel DOMMouseScroll",function(e,delta){
-    e.stopPropagation();
-    if (wheel){
+    if (wheel){ 
+      e.stopPropagation();
       let n = $(this).index();
       if(delta < 0){
         a = n+0;
@@ -48,5 +48,13 @@ $(document).ready(function(){
       $("#dot span").eq(a).siblings().removeClass("active");
       $("html,body").stop().animate({scrollTop:wh*a},600);
     };
+  });
+
+  $(".list_gp>li>.thum, .list_gp2>li>.th_p, .go a:nth-child(2), .go2 a:nth-child(2), .go3 .hana_modal, .go4 .museum_modal, .go5 .dadok_modal").click(function(){
+    wheel = false;
+  });
+
+  $(".close, .close2, .modal3, .modal4, .modal5, .modal6, .modal7").click(function(){
+    wheel = true;
   });
 });

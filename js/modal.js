@@ -1,6 +1,6 @@
 $(document).ready(function(){
 	
-  $(".list_gp>li>.thum").click(function(e){
+  $(".list_gp>li>.thum").click(function(){
 
     g_pop=$(this).index();
 
@@ -8,6 +8,7 @@ $(document).ready(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal_content>li").eq(g_pop).fadeIn();
     $(".modal").stop().fadeIn();
+    wheel = false;
   });
 
   $(".pre").click(function(){
@@ -32,7 +33,7 @@ $(document).ready(function(){
     $("html").css({"overflow-y":"scroll"}); 
     $(".modal").stop().fadeOut();
 		$(".modal_content>li").stop().hide();
-    
+    wheel = true;
   });
 
   

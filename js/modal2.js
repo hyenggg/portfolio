@@ -3,6 +3,7 @@ $(document).ready(function(){
   $(".go a:nth-child(2)").click(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal3").fadeIn();
+    $(".modal3").scrollTop(0);
   });
 
   $(".btn_close").click(function(){
@@ -13,6 +14,7 @@ $(document).ready(function(){
   $(".go2 a:nth-child(2)").click(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal4").fadeIn();
+    $(".modal4").scrollTop(0);
   });
 
   $(".btn_close2").click(function(){
@@ -23,6 +25,7 @@ $(document).ready(function(){
   $(".go3 .hana_modal").click(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal5").fadeIn();
+    $(".modal5").scrollTop(0);
   });
 
   $(".btn_close3").click(function(){
@@ -33,6 +36,7 @@ $(document).ready(function(){
   $(".go4 .museum_modal").click(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal6").fadeIn();
+    $(".modal6").scrollTop(0);
   });
 
   $(".btn_close4").click(function(){
@@ -43,6 +47,7 @@ $(document).ready(function(){
   $(".go5 .dadok_modal").click(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal7").fadeIn();
+    $(".modal7").scrollTop(0);
   });
 
   $(".btn_close5").click(function(){

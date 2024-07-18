@@ -17,7 +17,6 @@ $(document).ready(function(){
     $("html").css({"overflow-y":"hidden"});
     $(".modal_content2>li").eq(g_pop).fadeIn();
     $(".modal2").stop().fadeIn();
-    wheel = false;
   });
 
   $(document).ready(function(){
@@ -56,7 +55,6 @@ $(document).ready(function(){
     $(".modal2").stop().fadeOut();
 		$(".modal_content2>li").stop().hide();
     $(".area").on();
-    wheel = true;
   });
 
 

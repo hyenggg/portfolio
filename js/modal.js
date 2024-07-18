@@ -12,17 +12,17 @@ $(document).ready(function(){
 
   $(".pre").click(function(){
     if(g_pop>0){
-      $(".modal_content>li").eq(g_pop).stop().fadeOut(); 
+      $(".modal_content>li").eq(g_pop).stop().hide(); 
       g_pop--;
       $(".g_page em:nth-child(1)").text(g_pop+1);
-			$(".modal_content>li").eq(g_pop).stop().fadeIn();
+			$(".modal_content>li").eq(g_pop).stop().show();
       $(".modal").scrollTop(0);
     };
   });
 
   $(".next").click(function(){
     if(g_pop<7){
-      $(".modal_content>li").eq(g_pop).stop().fadeOut(); 
+      $(".modal_content>li").eq(g_pop).stop().hide(); 
       g_pop++;
       $(".g_page em:nth-child(1)").text(g_pop+1);
 			$(".modal_content>li").eq(g_pop).stop().show();

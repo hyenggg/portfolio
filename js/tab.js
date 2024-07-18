@@ -27,26 +27,28 @@ $(document).ready(function(){
   
       let result = $(this).attr("data-alt");
       $(".plist_all div").removeClass("active2");
-      $("#"+result).addClass("active2").hide().fadeIn();  //show()도 가능
+      $("#"+result).addClass("active2").hide().fadeIn();
     });
   
   });
 
   $(".pre2").click(function(){
     if(g_pop>0){
-      $(".modal_content2>li").eq(g_pop).stop().fadeOut(); 
+      $(".modal_content2>li").eq(g_pop).stop().hide(); 
       g_pop--;
       $(".g_page2 em:nth-child(1)").text(g_pop+1);
-			$(".modal_content2>li").eq(g_pop).stop().fadeIn();
+			$(".modal_content2>li").eq(g_pop).stop().show();
+      $(".modal2").scrollTop(0);
     };
   });
 
   $(".next2").click(function(){
     if(g_pop<4){
-      $(".modal_content2>li").eq(g_pop).stop().fadeOut(); 
+      $(".modal_content2>li").eq(g_pop).stop().hide(); 
       g_pop++;
       $(".g_page2 em:nth-child(1)").text(g_pop+1);
 			$(".modal_content2>li").eq(g_pop).stop().show();
+      $(".modal2").scrollTop(0);
     };
   });
 

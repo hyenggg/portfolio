@@ -1670,13 +1670,23 @@ hr.hr4{
   position: absolute;
   top: 128px;
   left: 400px;
+  animation: planicon-ani 1.1s infinite alternate ease-in;
 }
 
 .plan_icon img:nth-child(1){
   position: absolute;
-  top: -5px;
+  top: -3px;
   left: 60px;
   width: 30px;
+}
+
+@keyframes planicon-ani {
+  from{
+    transform: translateY(-4px);
+  }
+  to{
+    transform: translateY(2px);
+  }
 }
 
 .plan_icon img:nth-child(2){

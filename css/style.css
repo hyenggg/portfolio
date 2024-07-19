@@ -1656,6 +1656,7 @@ hr.hr4{
   width: 1300px;
   height: inherit;
   margin: auto;
+  position: relative;
 }
 
 .pl_in h2{
@@ -1663,6 +1664,26 @@ hr.hr4{
   font-size: 80px;
   padding-top: 100px;
   margin-bottom: 35px;
+}
+
+.plan_icon{
+  position: absolute;
+  top: 128px;
+  left: 400px;
+}
+
+.plan_icon img:nth-child(1){
+  position: absolute;
+  top: -5px;
+  left: 60px;
+  width: 30px;
+}
+
+.plan_icon img:nth-child(2){
+  position: absolute;
+  top: 5px;
+  left: 53px;
+  width: 45px;
 }
 
 .plan{

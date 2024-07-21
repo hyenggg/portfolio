@@ -908,6 +908,14 @@ hr.hr2{
   transition: 0.35s;
 }
 
+.go a:nth-child(2){
+  background-color:  #73ef73;
+}
+
+.go2 a:nth-child(2){
+  background-color:  #5bb0ff;
+}
+
 .go a:hover, .go2 a:hover{
   background-color: #181818;
   color: #FFE95B;;
@@ -1290,6 +1298,10 @@ hr.hr4{
   color: #FFE95B;;
 }
 
+.hana_modal a{
+  background-color:#79FFCE;
+}
+
 .responsive{
   display: flex;
 }
@@ -1513,6 +1525,10 @@ hr.hr4{
   margin-left: 20px;
 }
 
+.museum_modal a{
+  background-color: #00B373;
+}
+
 /* 두번째 슬라이드 */
 .mobile_slide .mobile_items li.mob1{
   background-color: #F0FFF1;
@@ -1638,6 +1654,10 @@ hr.hr4{
 
 .dadok_modal{
   margin-left: 20px;
+}
+
+.dadok_modal a{
+  background-color:#7ee67e;
 }
 
 .da img{
